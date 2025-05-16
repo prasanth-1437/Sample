@@ -15,7 +15,7 @@ function App() {
     console.log("kk")
     try {
       
-      const response = await fetch("http://localhost:5000/api/members");
+      const response = await fetch("https://sample-oe8x.onrender.com/api/members");
       const data = await response.json();
       setMembers(data);
     } catch (err) {
@@ -28,7 +28,7 @@ function App() {
     console.log("KKK")
     try {
      
-      const res=await axios.post("http://localhost:5000/api/members",{name,age : Number(age)})
+      const res=await axios.post("https://sample-oe8x.onrender.com/api/members",{name,age : Number(age)})
 
       setName('');
       setAge('');
